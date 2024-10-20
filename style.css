@@ -1,0 +1,86 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  overflow-x: hidden;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin: 0 10px;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  background-color: #575757;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+#home {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+#home img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+#home img:hover {
+  transform: scale(1.1);
+}
+
+/* About Section */
+#about {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 
